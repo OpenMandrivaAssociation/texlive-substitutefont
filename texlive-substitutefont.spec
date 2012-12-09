@@ -6,7 +6,7 @@
 # catalog-version 0.1.3
 Name:		texlive-substitutefont
 Version:	0.1.3
-Release:	2
+Release:	1
 Summary:	Easy font substitution
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/substitutefont
@@ -58,3 +58,15 @@ for another one, using its \substitutefont command.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1.3-1
++ Revision: 812884
+- Update to latest release.
+
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1.1-1
++ Revision: 805081
+- Import texlive-substitutefont
+- Import texlive-substitutefont
+
