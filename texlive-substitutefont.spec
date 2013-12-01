@@ -1,11 +1,11 @@
-# revision 26981
+# revision 32066
 # category Package
 # catalog-ctan /macros/latex/contrib/substitutefont
-# catalog-date 2012-07-08 14:35:29 +0200
+# catalog-date 2013-11-04 19:57:46 +0100
 # catalog-license lppl1.3
-# catalog-version 0.1.3
+# catalog-version 0.1.4
 Name:		texlive-substitutefont
-Version:	0.1.3
+Version:	0.1.4
 Release:	1
 Summary:	Easy font substitution
 Group:		Publishing
@@ -37,17 +37,18 @@ for another one, using its \substitutefont command.
 %files
 %{_texmfdistdir}/tex/latex/substitutefont/substitutefont.sty
 %doc %{_texmfdistdir}/doc/latex/substitutefont/README
-%doc %{_texmfdistdir}/doc/latex/substitutefont/README.html
 %doc %{_texmfdistdir}/doc/latex/substitutefont/cyrillic-lm-lgc.pdf
 %doc %{_texmfdistdir}/doc/latex/substitutefont/cyrillic-lm-lgc.tex
-%doc %{_texmfdistdir}/doc/latex/substitutefont/cyrillic-times-paratype.pdf
-%doc %{_texmfdistdir}/doc/latex/substitutefont/cyrillic-times-paratype.tex
+%doc %{_texmfdistdir}/doc/latex/substitutefont/cyrillic-paratype.pdf
+%doc %{_texmfdistdir}/doc/latex/substitutefont/cyrillic-paratype.tex
 %doc %{_texmfdistdir}/doc/latex/substitutefont/greek-palatino-didot.pdf
 %doc %{_texmfdistdir}/doc/latex/substitutefont/greek-palatino-didot.tex
-%doc %{_texmfdistdir}/doc/latex/substitutefont/greek-times-bodoni.pdf
-%doc %{_texmfdistdir}/doc/latex/substitutefont/greek-times-bodoni.tex
+%doc %{_texmfdistdir}/doc/latex/substitutefont/greek-times-artemisia.pdf
+%doc %{_texmfdistdir}/doc/latex/substitutefont/greek-times-artemisia.tex
+%doc %{_texmfdistdir}/doc/latex/substitutefont/substitutefont-doc.html
+%doc %{_texmfdistdir}/doc/latex/substitutefont/substitutefont-test.pdf
+%doc %{_texmfdistdir}/doc/latex/substitutefont/substitutefont-test.tex
 %doc %{_texmfdistdir}/doc/latex/substitutefont/substitutefont.sty.html
-%doc %{_texmfdistdir}/doc/latex/substitutefont/substitutefont.sty.txt
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,15 +59,3 @@ for another one, using its \substitutefont command.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1.3-1
-+ Revision: 812884
-- Update to latest release.
-
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1.1-1
-+ Revision: 805081
-- Import texlive-substitutefont
-- Import texlive-substitutefont
-
