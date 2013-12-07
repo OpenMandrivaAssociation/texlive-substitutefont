@@ -6,7 +6,7 @@
 # catalog-version 0.1.4
 Name:		texlive-substitutefont
 Version:	0.1.4
-Release:	3
+Release:	4
 Summary:	Easy font substitution
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/substitutefont
