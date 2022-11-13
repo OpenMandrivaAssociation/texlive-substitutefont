@@ -1,18 +1,12 @@
-# revision 32066
-# category Package
-# catalog-ctan /macros/latex/contrib/substitutefont
-# catalog-date 2013-11-04 19:57:46 +0100
-# catalog-license lppl1.3
-# catalog-version 0.1.4
 Name:		texlive-substitutefont
-Version:	0.1.4
-Release:	11
+Version:	32066
+Release:	1
 Summary:	Easy font substitution
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/substitutefont
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/substitutefont.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/substitutefont.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/substitutefont.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/substitutefont.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ facilitates the task of setting up a font family as substitute
 for another one, using its \substitutefont command.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -52,7 +46,7 @@ for another one, using its \substitutefont command.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
