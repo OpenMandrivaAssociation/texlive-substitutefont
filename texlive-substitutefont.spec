@@ -1,6 +1,6 @@
 Name:		texlive-substitutefont
 Version:	32066
-Release:	1
+Release:	2
 Summary:	Easy font substitution
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/substitutefont
