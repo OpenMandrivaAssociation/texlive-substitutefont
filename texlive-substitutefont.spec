@@ -3,7 +3,7 @@ Version:	32066
 Release:	2
 Summary:	Easy font substitution
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/substitutefont
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/substitutefont
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/substitutefont.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/substitutefont.doc.r%{version}.tar.xz
